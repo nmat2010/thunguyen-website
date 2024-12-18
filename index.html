@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thu Nguyen's website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav id="desktop-nav"> <!-- navigation bar desktop -->
+        <div class="logo">Thu Nguyen</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li> <!--link to about section-->
+                <li><a href="#skills">skills</a></li> <!--link to experience section-->
+                <li><a href="#projects">projects</a></li> <!--link to projects section-->
+                <li><a href="#contact">contact</a></li> <!--link to contact section-->
+            </ul>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
+    </nav>
+    <nav id="hamburger-nav"> <!-- navigation bar mobile -->
+        <div class="logo">Thu Nguyen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li> <!--link to about section-->
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li> <!--link to experience section-->
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li> <!--link to projects section-->
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li> <!--link to contact section-->
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profice_picture.jpg" alt="Thu Nguyen profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Thu Nguyen</h1>
+            <p class="section__text__p2">Computer Engineering Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/thu-nguyen-tech/'">
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/nmat2010'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile_picture_2.png"
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p> 1+ years<br>Software Development<br>Hardware Design</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E. Computer Engineering<br><i>Stony Brook University '28</i></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi there! Thanks for stopping by!
+                    </p>
+                    <br>
+                    <p>
+                        My name is Thu Nguyen, and I am a Computer Engineering major at Stony Brook University in New York, USA.
+                    </p>
+                    <br>
+                    <p>
+                        As a technology enthusiast, I am fascinated by the logic behind programming challenges and the intricate complexities of electrical designs. I am inspired by the potential of AI and robotics and have a strong interest in software development.
+                    </p>
+                    <br>
+                    <p>
+                        Outside of the classroom, I enjoy socializing with my talented peers in various clubs and honing my skills through project-based learning, where I create projects to address issues in my community. Additionally, I have a passion for cooking. To me, bringing people together through culinary exploration is a wonderful way to learn about and celebrate cultures from around the world!
+                    </p>
+                    <br>
+                    <p>
+                        It is great to see you, and I hope you have a wonderful day!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>C/C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Hardware Design</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Arduino</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>LTSpice</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>MPLab X</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/ese123.png" alt="Clock Product image" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">ESE 123 - Clock Project</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmat2010/ese123-project'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/SuhU6RNqCKw'">
+                            Youtube Video Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/SBU Food App.png" alt="SBU Food App Project" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">SBU Food Application</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SBU-Meal-Pricing'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/CMdT5eWOPGmS4EUpxfZG83/Meal-Price-Tracker-Initial-Design?node-id=1-2567&p=f&t=74bChYLAdEbMtHkR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2567'">
+                            Figma Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/google colab.png" alt="Google Colab icon" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">MNIST SVM Classifier</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://colab.research.google.com/drive/1b0f5ZLO0dhkm4t02XanRwky7rLsWxxIs?usp=sharing'">
+                            Google Colab
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1mrxSXi9C2SUUFXM75vKSBqX9LuWi9C7y/view?usp=sharing'">
+                            Vietnamese Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:thunma2010@gmail.com">thunma2010@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/thu-nguyen-tech/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li> <!--link to about section-->
+                    <li><a href="#skills">skills</a></li> <!--link to experience section-->
+                    <li><a href="#projects">projects</a></li> <!--link to projects section-->
+                    <li><a href="#contact">contact</a></li> <!--link to contact section-->
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Thu Nguyen. All Rights Reserved</p>
+    </footer>
+</body>
+</html>

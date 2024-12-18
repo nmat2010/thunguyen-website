@@ -1,0 +1,9 @@
+/* when the screen size is lower than 120px then don't display laptop navigation bar and display hamburger navigation*/
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
