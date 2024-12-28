@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thu Nguyen's website</title>
+    <title>Thu Nguyen Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <nav id="desktop-nav"> <!-- navigation bar desktop -->
         <div class="logo">Thu Nguyen</div>
         <div>
@@ -63,9 +62,9 @@
     </section>
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <h1 class="title about-h1">About Me</h1>
         <div class="section-container">
-            <div class="section__pic-container">
+            <div class="section__pic-container about-pic-container">
                 <img src="./assets/profile_picture_2.png"
                 alt="Profile Picture"
                 class="about-pic"
@@ -238,6 +237,20 @@
                         </button>
                     </div>
                 </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/meals-browser-img.png" alt="Meals Browser Website" class="project-img meals-browser"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Meals Browser Website</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmat2010/meals-browser'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://nmat2010.github.io/meals-browser/'">
+                            Website
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
@@ -246,28 +259,26 @@
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
-            <div class="row">
-                <div class="contact-left">
-                    <div class="contact-info-container">
-                        <p><a href="mailto:thunma2010@gmail.com">thunma2010@gmail.com</a></p>
-                    </div>
-                    <div class="contact-info-container">
-                        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                        <p><a href="https://www.linkedin.com/in/thu-nguyen-tech/">LinkedIn</a></p>
-                    </div>
-                    <div class="contact-info-container">
-                        <img src="./assets/github.png" alt="Email icon" class="icon contact-icon"/>
-                        <p><a href="https://github.com/nmat2010">Github</a></p>
-                    </div>
+            <div class="contact-left">
+                <div class="contact-info-container contact-left-e email">
+                    <p><a href="mailto:thunma2010@gmail.com">thunma2010@gmail.com</a></p>
                 </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Leave a message..." required></textarea>
-                        <button class="btn btn-color-2 form-btn">Submit</button>
-                    </form>
+                <div class="contact-info-container contact-left-e">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                    <p><a href="https://www.linkedin.com/in/thu-nguyen-tech/">LinkedIn</a></p>
                 </div>
+                <div class="contact-info-container contact-left-e">
+                    <img src="./assets/github.png" alt="Email icon" class="icon contact-icon"/>
+                    <p><a href="https://github.com/nmat2010">Github</a></p>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Leave a message..." required></textarea>
+                    <button class="btn btn-color-2 form-btn">Submit</button>
+                </form>
             </div>
         </div>
     </section>
@@ -284,5 +295,6 @@
         </nav>
         <p>Copyright &#169; 2024 Thu Nguyen. All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
