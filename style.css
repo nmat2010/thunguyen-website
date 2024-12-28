@@ -462,6 +462,13 @@ input::placeholder, textarea::placeholder {
     cursor: pointer;
  }
 
+.form-btn {
+    margin-bottom: 2rem;
+}
+#msg {
+    color: rgb(85,85,85);
+    display: block;
+ }
 
 /* FOOTER SECTION*/
 

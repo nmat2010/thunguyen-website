@@ -273,12 +273,13 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Leave a message..." required></textarea>
                     <button class="btn btn-color-2 form-btn">Submit</button>
                 </form>
+                <i><span id="msg"></span></i>
             </div>
         </div>
     </section>
@@ -296,5 +297,23 @@
         <p>Copyright &#169; 2024 Thu Nguyen. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3P66CZ1et7TX0eapq-KClRnTbLCdeW1rge_wOSn9BjFk0ssQIhJLQuNNs1rH3Tm-B/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully. Thank you!"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
