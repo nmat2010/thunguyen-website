@@ -9,19 +9,19 @@
 </head>
 <body>
     <nav id="desktop-nav"> <!-- navigation bar desktop -->
-        <div class="logo">Thu Nguyen</div>
+        <div class="logo"><a class="nav-links logo" href="#profile">Thu Nguyen</a></div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">about</a></li> <!--link to about section-->
-                <li><a href="#skills">skills</a></li> <!--link to experience section-->
-                <li><a href="#projects">projects</a></li> <!--link to projects section-->
-                <li><a href="#contact">contact</a></li> <!--link to contact section-->
+                <li><a href="#about">About</a></li> <!--link to about section-->
+                <li><a href="#skills">Skills</a></li> <!--link to experience section-->
+                <li><a href="#projects">Projects</a></li> <!--link to projects section-->
+                <li><a href="#contact">Contact</a></li> <!--link to contact section-->
             </ul>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
     </nav>
     <nav id="hamburger-nav"> <!-- navigation bar mobile -->
-        <div class="logo">Thu Nguyen</div>
+        <div class="logo"><a href="#profile">Thu Nguyen</a></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -45,7 +45,7 @@
             <h1 class="title">Thu Nguyen</h1>
             <p class="section__text__p2">Computer Engineering Student</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -53,10 +53,12 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/thu-nguyen-tech/'">
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/nmat2010'">
+                <a href="https://www.linkedin.com/in/thu-nguyen-tech/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+                </a>
+                <a href="https://github.com/nmat2010" target="_blank">
+                    <img src="./assets/github.png" alt="My Github profile" class="icon">
+                </a>
             </div>
         </div>
     </section>
@@ -201,12 +203,16 @@
                     </div>
                     <h2 class="experience-sub-title project-title">ESE 123 - Clock Project</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmat2010/ese123-project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/SuhU6RNqCKw'">
-                            Youtube Video Demo
-                        </button>
+                        <a href="https://github.com/nmat2010/ese123-project" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a href="https://youtu.be/SuhU6RNqCKw" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Youtube Demo
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -215,12 +221,16 @@
                     </div>
                     <h2 class="experience-sub-title project-title">SBU Food Application</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SBU-Meal-Pricing'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/CMdT5eWOPGmS4EUpxfZG83/Meal-Price-Tracker-Initial-Design?node-id=1-2567&p=f&t=74bChYLAdEbMtHkR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2567'">
-                            Figma Demo
-                        </button>
+                        <a href="https://github.com/SBU-Meal-Pricing" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a href="https://www.figma.com/proto/CMdT5eWOPGmS4EUpxfZG83/Meal-Price-Tracker-Initial-Design?node-id=1-2567&p=f&t=74bChYLAdEbMtHkR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2567" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Figma Demo
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -229,12 +239,16 @@
                     </div>
                     <h2 class="experience-sub-title project-title">MNIST SVM Classifier</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://colab.research.google.com/drive/1b0f5ZLO0dhkm4t02XanRwky7rLsWxxIs?usp=sharing'">
-                            Google Colab
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1mrxSXi9C2SUUFXM75vKSBqX9LuWi9C7y/view?usp=sharing'">
-                            Vietnamese Report
-                        </button>
+                        <a href="https://colab.research.google.com/drive/1b0f5ZLO0dhkm4t02XanRwky7rLsWxxIs?usp=sharing" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Google Colab
+                            </button>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1mrxSXi9C2SUUFXM75vKSBqX9LuWi9C7y/view?usp=sharing" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Vietnamese Report
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -243,12 +257,16 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Meals Browser Website</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/nmat2010/meals-browser'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://nmat2010.github.io/meals-browser/'">
-                            Website
-                        </button>
+                        <a href="https://github.com/nmat2010/meals-browser" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Github
+                            </button>
+                        </a>
+                        <a href="https://nmat2010.github.io/meals-browser/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">
+                                Website
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -261,15 +279,15 @@
         <div class="contact-info-upper-container">
             <div class="contact-left">
                 <div class="contact-info-container contact-left-e email">
-                    <p><a href="mailto:thunma2010@gmail.com">thunma2010@gmail.com</a></p>
+                    <p><a href="mailto:thunma2010@gmail.com" target="_blank">thunma2010@gmail.com</a></p>
                 </div>
                 <div class="contact-info-container contact-left-e">
                     <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                    <p><a href="https://www.linkedin.com/in/thu-nguyen-tech/">LinkedIn</a></p>
+                    <p><a href="https://www.linkedin.com/in/thu-nguyen-tech/" target="_blank">LinkedIn</a></p>
                 </div>
                 <div class="contact-info-container contact-left-e">
                     <img src="./assets/github.png" alt="Email icon" class="icon contact-icon"/>
-                    <p><a href="https://github.com/nmat2010">Github</a></p>
+                    <p><a href="https://github.com/nmat2010" target="_blank">Github</a></p>
                 </div>
             </div>
             <div class="contact-right">

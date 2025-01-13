@@ -36,7 +36,11 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
 }
 
 .nav-links {
@@ -71,6 +75,12 @@ a:hover {
 
 #hamburger-nav {
     display: none;
+    height: 8vh;
+    margin-top: 0;
+}
+
+#profile {
+    margin-top: 30px;
 }
 
 .hamburger-menu {
@@ -475,6 +485,9 @@ input::placeholder, textarea::placeholder {
 footer {
     height: 26vh;
     margin: 0 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 footer p {
