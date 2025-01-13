@@ -73,16 +73,6 @@ a:hover {
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
-    display: none;
-    height: 8vh;
-    margin-top: 0;
-}
-
-#profile {
-    margin-top: 30px;
-}
-
 .hamburger-menu {
     position: relative;
     display: inline-block;
