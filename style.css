@@ -3,10 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* import Be Vietnam Pro font */
 
+:root{
+    --base-color: white;
+    --text-color: rgb(85,85,85);
+    --nav-background: white;
+    --a-decoration: white;
+    --a-hover-text: grey;
+}
+
+/* .darkmode {
+    --base-color: black;
+    --text-color: white;
+    --nav-background: black;
+    --a-decoration:black;
+    --a-hover-text: grey;
+} */
 
 * {
     margin: 0;
     padding: 0;
+    background-color: var(--base-color);
 }
 
 body {
@@ -18,7 +34,7 @@ html {
 }
 
 p { 
-    color: rgb(85,85,85);
+    color: var(--text-color);
 }
 
 /* TRANSITION */
@@ -36,10 +52,10 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: var(--nav-background);
     z-index: 1;
 }
 
@@ -47,6 +63,25 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
 }
 
 a {
@@ -73,7 +108,7 @@ a:hover {
 
 /* HAMBURGER MENU */
 
-.hamburger-menu {
+/* .hamburger-menu {
     position: relative;
     display: inline-block;
 }
@@ -145,7 +180,7 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
-}
+} */
 
 /* SECTIONS */
 
@@ -168,6 +203,10 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+}
+
+.profile-pic {
+    border-radius: 50%;
 }
 
 .section__pic-container {
@@ -245,22 +284,13 @@ section {
     cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover {
+.btn-color-1:hover, .btn-color-2:hover {
     background: rgb(53,53,53);
     color: white;
 }
 
-.btn-color-1:hover {
+.btn-color-1, .btn-color-2 {
     background: none;
-    color: black;
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
 }
 
 .btn-container {
